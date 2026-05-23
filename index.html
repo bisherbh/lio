@@ -8,6 +8,8 @@
       content="LIO — AI-powered vision and language tools on your device. Learn about the app and support independent development."
     />
     <title>LIO — AI Tools &amp; Support</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="apple-touch-icon" href="assets/logo.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,7 +23,10 @@
 
     <header class="site-header animate-fade-down">
       <div class="container header-inner">
-        <a class="logo logo-glow" href="#">LIO</a>
+        <a class="logo logo-glow" href="#">
+          <img class="logo-mark" src="assets/logo.png" alt="" width="40" height="40" />
+          <span>LIO</span>
+        </a>
         <nav class="nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#features">Features</a>
@@ -33,6 +38,13 @@
 
     <section class="hero">
       <div class="container">
+        <img
+          class="hero-logo animate-fade-up"
+          src="assets/logo.png"
+          alt="LIO app logo"
+          width="96"
+          height="96"
+        />
         <span class="hero-badge animate-fade-up delay-1">On-device AI · Flutter · Smart Vision</span>
         <h1 class="animate-fade-up delay-2">Welcome to <span class="text-shimmer">LIO</span></h1>
         <p class="animate-fade-up delay-3">
@@ -182,7 +194,10 @@
 
     <footer class="site-footer reveal">
       <div class="container">
-        <p><strong>LIO</strong> · Version 1.1.4</p>
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/logo.png" alt="" width="36" height="36" />
+          <p><strong>LIO</strong> · Version 1.1.4</p>
+        </div>
         <p>
           For more information about the project or to support the developer,
           use the Support section above.
