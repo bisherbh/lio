@@ -11,14 +11,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
+    
+    
+    <div class="hero-bg-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+
+    <header class="site-header animate-fade-down">
       <div class="container header-inner">
-        <a class="logo" href="#">LIO</a>
+        <a class="logo logo-glow" href="#">LIO</a>
         <nav class="nav" aria-label="Main navigation">
           <a href="#about">About</a>
           <a href="#features">Features</a>
           <a href="#donate">Support</a>
-          <a href="https://bichrbraighle.worldofdesigns.ca/" target="_blank" rel="noopener">Developer</a>
           <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">🌙</button>
         </nav>
       </div>
@@ -26,15 +33,15 @@
 
     <section class="hero">
       <div class="container">
-        <span class="hero-badge">On-device AI · Flutter · Google ML Kit</span>
-        <h1>Welcome to <span>LIO</span></h1>
-        <p>
+        <span class="hero-badge animate-fade-up delay-1">On-device AI · Flutter · Smart Vision</span>
+        <h1 class="animate-fade-up delay-2">Welcome to <span class="text-shimmer">LIO</span></h1>
+        <p class="animate-fade-up delay-3">
           AI-powered vision and language tools that run on your device — fast,
           private, and easy to use. For more information about the project or to
-          support the developer, explore this page or visit the links below.
+          support the developer, explore this page using the sections below.
         </p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#donate">☕ Support Development</a>
+        <div class="hero-actions animate-fade-up delay-4">
+          <a class="btn btn-primary btn-pulse" href="#donate">☕ Support Development</a>
           <a class="btn btn-secondary" href="#about">Learn about LIO</a>
         </div>
       </div>
@@ -42,41 +49,41 @@
 
     <section id="about">
       <div class="container">
-        <h2 class="section-title">What is LIO?</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title reveal">What is LIO?</h2>
+        <p class="section-subtitle reveal">
           LIO is a mobile app that brings powerful machine-learning tools to your
-          phone. Built with Flutter and Google ML Kit, it helps you analyze images,
-          recognize text, detect faces, and understand language — without sending
-          your data to the cloud for every task.
+          phone. Built with Flutter and on-device intelligence, it helps you analyze
+          images, recognize text, detect faces, and understand language — without
+          sending your data to the cloud for every task.
         </p>
 
         <div class="about-grid">
-          <article class="card about-item">
-            <div class="emoji">📱</div>
+          <article class="card about-item reveal stagger-1">
+            <div class="emoji float-icon">📱</div>
             <h3>On your device</h3>
             <p>
               Many tools process input locally for speed and privacy, so you can
               work anywhere without always relying on a server.
             </p>
           </article>
-          <article class="card about-item">
-            <div class="emoji">👁️</div>
+          <article class="card about-item reveal stagger-2">
+            <div class="emoji float-icon delay-icon">👁️</div>
             <h3>Vision tools</h3>
             <p>
               Scan barcodes, recognize text, detect objects, faces, poses, and
               more — all from your camera or photo gallery.
             </p>
           </article>
-          <article class="card about-item">
-            <div class="emoji">💬</div>
+          <article class="card about-item reveal stagger-3">
+            <div class="emoji float-icon">💬</div>
             <h3>Language tools</h3>
             <p>
               Identify languages and extract useful entities from text to speed up
               everyday reading and writing tasks.
             </p>
           </article>
-          <article class="card about-item">
-            <div class="emoji">⭐</div>
+          <article class="card about-item reveal stagger-4">
+            <div class="emoji float-icon delay-icon">⭐</div>
             <h3>Built for daily use</h3>
             <p>
               Search tools, mark favorites, revisit recent features, and switch
@@ -85,17 +92,12 @@
           </article>
         </div>
 
-        <div class="developer-card">
+        <div class="developer-card reveal shine-card">
           <div class="developer-avatar">BB</div>
           <div>
             <p>App made by</p>
             <h3>Bichr Braighle</h3>
-            <p>
-              Independent developer ·
-              <a href="https://bichrbraighle.worldofdesigns.ca/" target="_blank" rel="noopener">
-                bichrbraighle.worldofdesigns.ca
-              </a>
-            </p>
+            <p>Independent developer</p>
           </div>
         </div>
       </div>
@@ -103,36 +105,39 @@
 
     <section id="features">
       <div class="container">
-        <h2 class="section-title">App features</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title reveal">App features</h2>
+        <p class="section-subtitle reveal">
           LIO combines vision and language capabilities in one clean home screen.
         </p>
 
-        <p class="feature-group-label">Vision</p>
+        <p class="feature-group-label reveal">Vision</p>
         <div class="features-grid">
-          <div class="feature-chip"><strong>Barcode Scanning</strong><span>Read QR &amp; barcodes</span></div>
-          <div class="feature-chip"><strong>Face ID &amp; Detection</strong><span>Recognize and save faces</span></div>
-          <div class="feature-chip"><strong>Face Mesh</strong><span>Detailed facial landmarks</span></div>
-          <div class="feature-chip"><strong>Image Labeling</strong><span>Describe what is in a photo</span></div>
-          <div class="feature-chip"><strong>Object Detection</strong><span>Find objects in scenes</span></div>
-          <div class="feature-chip"><strong>Text Recognition</strong><span>OCR from camera or gallery</span></div>
-          <div class="feature-chip"><strong>Digital Ink</strong><span>Handwriting recognition</span></div>
-          <div class="feature-chip"><strong>Pose Detection</strong><span>Track body positions</span></div>
-          <div class="feature-chip"><strong>Selfie Segmentation</strong><span>Separate person from background</span></div>
+          <div class="feature-chip reveal stagger-1"><strong>Barcode Scanning</strong><span>Read QR &amp; barcodes</span></div>
+          
+          <div class="feature-chip reveal stagger-2"><strong>Face ID &amp; Detection</strong><span>Recognize and save faces</span></div>
+          <div class="feature-chip reveal stagger-3"><strong>Face Mesh</strong><span>Detailed facial landmarks</span></div>
+          <div class="feature-chip reveal stagger-4"><strong>Image Labeling</strong><span>Describe what is in a photo</span></div>
+          <div class="feature-chip reveal stagger-5"><strong>Object Detection</strong><span>Find objects in scenes</span></div>
+          
+          
+          <div class="feature-chip reveal stagger-6"><strong>Text Recognition</strong><span>OCR from camera or gallery</span></div>
+          <div class="feature-chip reveal stagger-1"><strong>Digital Ink</strong><span>Handwriting recognition</span></div>
+          <div class="feature-chip reveal stagger-2"><strong>Pose Detection</strong><span>Track body positions</span></div>
+          <div class="feature-chip reveal stagger-3"><strong>Selfie Segmentation</strong><span>Separate person from background</span></div>
         </div>
 
-        <p class="feature-group-label">Language</p>
+        <p class="feature-group-label reveal">Language</p>
         <div class="features-grid">
-          <div class="feature-chip"><strong>Language ID</strong><span>Detect text language</span></div>
-          <div class="feature-chip"><strong>Entity Extraction</strong><span>Pull out names, places &amp; more</span></div>
+          <div class="feature-chip reveal stagger-1"><strong>Language ID</strong><span>Detect text language</span></div>
+          <div class="feature-chip reveal stagger-2"><strong>Entity Extraction</strong><span>Pull out names, places &amp; more</span></div>
         </div>
       </div>
     </section>
 
     <section id="donate" class="donate-section">
       <div class="container">
-        <div class="card donate-panel">
-          <div class="coffee">☕</div>
+        <div class="card donate-panel reveal">
+          <div class="coffee bounce-soft">☕</div>
           <h2>Support Continued Development</h2>
           <p class="donate-text">
             Welcome! As an independent developer, I work passionately to deliver
@@ -145,7 +150,7 @@
             features to the app. Thank you for believing in the project!
           </p>
 
-          <div class="qr-wrap">
+          <div class="qr-wrap qr-glow">
             <img
               src="assets/donate_qr.png"
               alt="QR code to donate via TRC20 wallet"
@@ -162,8 +167,8 @@
             </button>
           </div>
 
-          <div class="warning-box" role="alert">
-            <span aria-hidden="true">⚠️</span>
+          <div class="warning-box reveal" role="alert">
+            <span class="pulse-warn" aria-hidden="true">⚠️</span>
             <div>
               <strong>TRC20 network only</strong>
               Notice: Please use the TRC20 network exclusively to ensure the amount
@@ -175,17 +180,14 @@
       </div>
     </section>
 
-    <footer class="site-footer">
+    <footer class="site-footer reveal">
       <div class="container">
         <p><strong>LIO</strong> · Version 1.1.4</p>
         <p>
           For more information about the project or to support the developer,
-          visit
-          <a href="https://bichrbraighle.worldofdesigns.ca/" target="_blank" rel="noopener">
-            bichrbraighle.worldofdesigns.ca
-          </a>
+          use the Support section above.
         </p>
-        <p>© Bichr Braighle · Built with Flutter &amp; Google ML Kit</p>
+        <p>© Bichr Braighle · Built with Flutter &amp; On-device Intelligence</p>
       </div>
     </footer>
 
